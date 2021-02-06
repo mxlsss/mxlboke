@@ -40,7 +40,7 @@ class SeedSitesData extends Migration
         DB::table('nodes')->truncate();
         DB::table('settings')->truncate();
     }
-    
+
     //填充用户
     public function seedUsers()
     {
@@ -55,7 +55,7 @@ class SeedSitesData extends Migration
             'role_id' => 1
         ]);
     }
-    
+
     //填充角色
     public function seedRoles()
     {
@@ -63,13 +63,13 @@ class SeedSitesData extends Migration
             'name' => '创始人',
             'description' => '网站创始人',
         ]);
-        
+
         Role::create([
             'name' => '注册用户',
             'description' => '网站注册用户',
         ]);
     }
-    
+
     //填充友链
     public function seedLinks()
     {
@@ -79,12 +79,12 @@ class SeedSitesData extends Migration
             'status' => 1
         ]);
     }
-    
+
     //填充节点
     public function seedNodes()
     {
         \DB::table('nodes')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'title' => '控制台',
@@ -96,7 +96,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:50:22',
                 'updated_at' => '2019-09-04 12:50:22',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'title' => '管理',
@@ -108,7 +108,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:51:10',
                 'updated_at' => '2019-09-04 12:51:10',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'title' => '设置',
@@ -120,7 +120,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:51:56',
                 'updated_at' => '2019-09-04 12:51:56',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'title' => '仪表盘',
@@ -132,7 +132,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:55:29',
                 'updated_at' => '2019-09-04 12:55:29',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'title' => '我的资料',
@@ -144,7 +144,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:56:54',
                 'updated_at' => '2019-09-04 12:56:54',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'title' => '修改密码',
@@ -156,7 +156,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 12:57:22',
                 'updated_at' => '2019-09-04 12:57:22',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'title' => '文章列表',
@@ -168,7 +168,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:02:03',
                 'updated_at' => '2019-09-04 13:02:03',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'title' => '分类列表',
@@ -180,7 +180,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:03:13',
                 'updated_at' => '2019-09-04 13:03:13',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'title' => '用户列表',
@@ -192,7 +192,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:04:04',
                 'updated_at' => '2019-09-04 13:04:04',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'title' => '角色列表',
@@ -204,7 +204,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:04:42',
                 'updated_at' => '2019-09-04 13:04:42',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'title' => '节点列表',
@@ -216,7 +216,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:05:25',
                 'updated_at' => '2019-09-04 13:05:25',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'title' => '评论列表',
@@ -228,7 +228,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:06:06',
                 'updated_at' => '2019-09-04 13:06:06',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'title' => '标签列表',
@@ -240,7 +240,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:06:34',
                 'updated_at' => '2019-09-04 13:06:34',
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'title' => '页面列表',
@@ -252,7 +252,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:07:17',
                 'updated_at' => '2019-09-04 13:07:17',
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'title' => '链接列表',
@@ -264,7 +264,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:07:45',
                 'updated_at' => '2019-09-04 13:07:45',
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'title' => '全局',
@@ -276,7 +276,7 @@ class SeedSitesData extends Migration
                 'created_at' => '2019-09-04 13:11:25',
                 'updated_at' => '2019-09-04 13:11:25',
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'title' => '上传',
@@ -290,16 +290,16 @@ class SeedSitesData extends Migration
             ),
         ));
     }
-    
+
     //填充系统配置
     public function seedSettings()
     {
-        Setting::create(['name' => 'name', 'value' => 'Lara博客系统']);
-        Setting::create(['name' => 'title', 'value' => 'Lara博客系统']);
-        Setting::create(['name' => 'keyword', 'value' => 'Lara,博客,Laravel,Laravel博客']);
-        Setting::create(['name' => 'description', 'value' => '一款基于Laravel 6.x 开发的博客系统']);
+        Setting::create(['name' => 'name', 'value' => '马祥龙的私人博客']);
+        Setting::create(['name' => 'title', 'value' => '这是一个博客']);
+        Setting::create(['name' => 'keyword', 'value' => '博客,Laravel,Laravel博客']);
+        Setting::create(['name' => 'description', 'value' => '开源博客']);
         Setting::create(['name' => 'status', 'value' => '1']);
-        Setting::create(['name' => 'icp', 'value' => '浙ICP备16000810号-2']);
+        Setting::create(['name' => 'icp', 'value' => '晋ICP备16000810号-2']);
         Setting::create(['name' => 'code', 'value' => '']);
         Setting::create(['name' => 'upload_size', 'value' => '2M', 'type' => 'upload']);
         Setting::create(['name' => 'upload_type', 'value' => 'png,jpg,jpeg,gif', 'type' => 'upload']);
